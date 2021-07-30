@@ -17,6 +17,8 @@
             <header class="pb-3 mb-4 border-bottom">
                 <img src="./resources/icon-sun.svg" width="26" height="26" />
                 <span class="fs-4 ps-1">Bienvenido a mi página,</span>
+                <p id='frasedia' class="estilo_frase"></p>
+
                 <span class="fs-4 ps-1">hoy es: <b> <p id="tiempo"></p></b></span>
 
                 <div class="form-check form-switch">
