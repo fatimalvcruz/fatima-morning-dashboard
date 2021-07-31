@@ -23,7 +23,7 @@
 
                 <div class="form-check form-switch">
                     <input class="form-check-input" type="checkbox" id="defineParallax" checked />
-                    <label class="form-check-label" for="defineParallax">Fijar foto</label>
+                    <label class="form-check-label" for="defineParallax">Parallax</label>
                 </div>
                 <!-- Container element -->
             </header>
