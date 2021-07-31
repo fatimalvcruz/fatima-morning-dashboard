@@ -8,7 +8,7 @@
 
         <!-- Bootstrap CSS -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-        <link href="css/style.css" rel="stylesheet" />
+        <link href="css/style.css?v=1" rel="stylesheet" />
         <title>Fatima Morning Dashboard</title>            
     </head>
 
@@ -19,7 +19,7 @@
                 <img src="./resources/icon-sun.svg" width="26" height="26" />
                 <span class="fs-4 ps-1">Bienvenido a mi página</span>       
                 <span class="fs-4 ps-1">hoy es: <b> <p id="tiempo"></p></b></span>
-                <button  id="botonFrase"  type="button" class="btn btn-outline-dark">cambiar frase</button>
+                <button  id="botonFrase"   type="button" class="btn btn-outline-dark mb-2">cambiar frase</button>
                 <blockquote class="blockquote">
                     <p class="display-5 fst-italic" id="frasedia" class="estilo_frase"></p>
                 </blockquote>
