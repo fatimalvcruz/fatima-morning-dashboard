@@ -28,9 +28,6 @@ jobs:
           key: ${{ secrets.JAVIERCAMACHO_SERVER }}
           known_hosts: ${{ secrets.DEPLOY_HOST_KEY }}
           
-      - name: Adding Known Hosts
-        run: ssh-keyscan -H {% raw %}${{ secrets.SSH_HOST }}{% endraw %} >> ~/.ssh/known_hosts
-
       - name: Deploy
         run: cd /home/app/javiercamacholopez.com/html/fatima-morning-dashboard && git pull origin main
 
