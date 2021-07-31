@@ -21,8 +21,11 @@
                 <span class="fs-4 ps-1">hoy es: <b> <p id="tiempo"></p></b></span>
                 <button  id="botonFrase"  type="button" class="btn btn-outline-dark">cambiar frase</button>
                 <blockquote class="blockquote">
-                    <p class="display-4 fst-italic" id='frasedia' class="estilo_frase"></p>
+                    <p class="display-5 fst-italic" id="frasedia" class="estilo_frase"></p>
                 </blockquote>
+                <figcaption class="blockquote-footer">
+                <cite title="Source Title" id="autor"> </cite>
+                </figcaption>
                 
         </figure>         
                 <div class="form-check form-switch">
