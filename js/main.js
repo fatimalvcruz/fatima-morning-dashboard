@@ -23,20 +23,38 @@ window.onload = function(){
             p.classList.add('off');
         }
     });
+
+    document.getElementById('botonFrase').addEventListener('click', () => displayFrase() );
+
+    displayFrase();
 };
 
-const array_frase =[
-    'Piensa, sueña, cree y atrévete - Walt Disney',
-    'La edad no es barrera. Es una limitación que pones en tu mente - Jackie Joyner-Kersee',
-    'Si puedes soñarlo, puedes hacerlo - Walt Disney',
-    'Para que alguien te tome en serio, primero te tienes que tomar en serio tú - Mario Alonso Puig',
-    'Uno de los ingredientes que aumentan nuestras posibilidades de tener éxito en la vida es el mantener una mentalidad positiva en medio de la dificultad - Mario Alonso Puig',
-    'Cree que puedes y casi lo habrás logrado - Theodore Roosevelt',
-    'Cuando dejo ir lo que soy, me convierto en lo que debería ser - Lao Tzu', 
-    'Existe al menos un rincón del universo que con toda seguridad puedes mejorar, y eres tú mismo - Aldous Huxley'];   
+function displayFrase()
+{
+    const frase = [
+        'Piensa, sueña, cree y atrévete - Walt Disney',
+        'La edad no es barrera. Es una limitación que pones en tu mente - Jackie Joyner-Kersee',
+        'Si puedes soñarlo, puedes hacerlo - Walt Disney',
+        'Para que alguien te tome en serio, primero te tienes que tomar en serio tú - Mario Alonso Puig',
+        'Uno de los ingredientes que aumentan nuestras posibilidades de tener éxito en la vida es el mantener una mentalidad positiva en medio de la dificultad - Mario Alonso Puig',
+        'Cree que puedes y casi lo habrás logrado - Theodore Roosevelt',
+        'Cuando dejo ir lo que soy, me convierto en lo que debería ser - Lao Tzu', 
+        'Existe al menos un rincón del universo que con toda seguridad puedes mejorar, y eres tú mismo - Aldous Huxley'
+    ];   
 
-document.getElementById('frasedia').innerHTML = array_frase[1];
+    const randomItem = frase[Math.floor(Math.random()*frase.length)];
 
-console.log(array_frase[5]);
+    document.getElementById('frasedia').innerHTML = randomItem;
+}
+
+
+
+
+
+
+
+
+
+
 
 

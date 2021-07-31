@@ -14,13 +14,17 @@
 
     <body>
         <div class="container py-4">
+        <figure class="text-center">
             <header class="pb-3 mb-4 border-bottom">
                 <img src="./resources/icon-sun.svg" width="26" height="26" />
-                <span class="fs-4 ps-1">Bienvenido a mi página,</span>
-                <p id='frasedia' class="estilo_frase"></p>
-
+                <span class="fs-4 ps-1">Bienvenido a mi página</span>       
                 <span class="fs-4 ps-1">hoy es: <b> <p id="tiempo"></p></b></span>
-
+                <button  id="botonFrase"  type="button" class="btn btn-outline-dark">cambiar frase</button>
+                <blockquote class="blockquote">
+                    <p class="display-4 fst-italic" id='frasedia' class="estilo_frase"></p>
+                </blockquote>
+                
+        </figure>         
                 <div class="form-check form-switch">
                     <input class="form-check-input" type="checkbox" id="defineParallax" checked />
                     <label class="form-check-label" for="defineParallax">Parallax</label>
