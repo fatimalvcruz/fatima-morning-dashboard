@@ -25,11 +25,11 @@ jobs:
       - name: Install SSH Key
         uses: shimataro/ssh-key-action@v2
         with:
-          key: ${{ secrets.JAVIERCAMACHO_SERVER }} 
+          key: ${{ secrets.JAVIERCAMACHO_SERVER }}
           known_hosts: ''
           
       - name: Adding Known Hosts
-        run: ssh-keyscan -H ${{ secrets.SSH_HOST }} >> ~/.ssh/known_hosts
+        run: ssh-keyscan -H {% raw %}${{ secrets.SSH_HOST }}{% endraw %} >> ~/.ssh/known_hosts
 
       - name: Deploy
         run: cd /home/app/javiercamacholopez.com/html/fatima-morning-dashboard && git pull origin main
